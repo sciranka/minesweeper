@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="images/favicon32.png" sizes="32x32" type="image/png">
+</head>
+
+<body>
+
+    <!-- MODAL - OPTION -->
+    <div class="modal" id="optionModal">
+        <div id="modalContent">
+            <div id="modalHeader">
+                <h2>Options</h2>
+                <span id="closeModal">&times;</span>
+            </div>
+            <div id="rowsColumns">
+                <div id="autoControl">
+                    AUTO:
+                    <span id="autoSwitch">ON</span>
+                </div>
+                <div id="rows">
+                    <label for="numberOfRowsInput">Rows: </label>
+                    <input type="number" id="numberOfRowsInput" class="control" disabled>
+                </div>
+                <div id="columns">
+                    <label for="numberOfColumnsInput">Columns: </label>
+                    <input type="number" id="numberOfColumnsInput" class="control" disabled>
+                </div>
+                <div id="percentage">
+                    <label for="percentageInput">% of bombs: </label>
+                    <input type="number" id="percentageInput" class="control">
+                </div>
+
+                <div id="submitBtn">New Game</div>
+            </div>
+
+        
+            <!-- MODAL FOOTER -->
+            <div id="modalFooter">
+                &copy; Cretaed by LittleBigOwl
+            </div>
+
+        </div>
+    </div>
+
+
+    <header>
+        <div id="mainHeading">MINESWEEPER</div>
+    </header>
+
+    <div id="main-container">
+        <div id="controlsContainer">
+            <div id="timeBomb">
+                <div id="time">
+                    <p><span id="minutes">00</span>&nbsp;:&nbsp;<span id="seconds">00</span></p>
+                </div>
+                <div id="optionButton">OPTION</div>
+                <div id="bombs">
+                    <p>BOMBS:&nbsp;<span id="bombsNumber">0</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PLAYGROUND -->
+        <div id="playground"></div>
+    </div>
+
+    <div id="loadImage">
+        <img src="images/flag.png" alt="flag">
+        <img src="images/bomb2.png" alt="bomb">
+        <img src="images/clickedBomb.png" alt="clicked bomb">
+    </div>
+    
+
+    <!-- SCRIPTS -->
+    <script src="main.js"></script>
+</body>
+
+</html>
